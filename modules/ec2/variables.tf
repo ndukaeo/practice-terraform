@@ -5,5 +5,5 @@ variable "instance_type" {
   default = "t3.small"
 }
 variable "name" {
-  default = "practice"
+  default = "practice-3"
 }
