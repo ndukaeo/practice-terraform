@@ -1,9 +1,10 @@
-resource "aws_instance" "practice-web" {
-  name          = var.name
+resource "aws_instance" "practice" {
+
+  name          = "{{var.name}}-web"
   ami           = var.ami
   instance_type = var.instance_type
 
   tags = {
-    Name = var.name
+    Name = "{{var.name}}-web"
   }
 }
