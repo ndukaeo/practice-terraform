@@ -9,7 +9,7 @@ resource "aws_instance" "practice" {
 #   }
 
   tags = {
-    Name = practice-web
+    Name = "practice-web"
   }
 }
 
