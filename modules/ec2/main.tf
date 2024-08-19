@@ -7,7 +7,7 @@ resource "aws_instance" "practice" {
   }
 
   tags = {
-    Name = var.name
+    Name = var.name[]
   }
 }
 
