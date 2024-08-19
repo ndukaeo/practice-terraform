@@ -4,6 +4,6 @@ resource "aws_security_group" "allow_all" {
   vpc_id      = module.vpc.vpc_id
 
   tags = {
-    Name = "${var.env}-sg"
+    Name = "allow-all-${var.env}-sg"
   }
 }
