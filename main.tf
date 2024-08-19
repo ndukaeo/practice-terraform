@@ -17,3 +17,12 @@ module "vpc" {
 
 
 }
+
+module "sg" {
+  source = "./modules/sg"
+  depends_on = [module.vpc]
+
+
+
+
+}
