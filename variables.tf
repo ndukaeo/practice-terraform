@@ -4,3 +4,6 @@ variable "ami" {
 variable "instance_type" {
   default = "t3.small"
 }
+variable "name" {
+  default = ["practice-web-1", "practice-web-2"]
+}

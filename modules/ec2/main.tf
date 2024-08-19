@@ -7,7 +7,7 @@ resource "aws_instance" "practice" {
   }
 
   tags = {
-    Name = "practice-web2"
+    Name = var.name
   }
 }
 
