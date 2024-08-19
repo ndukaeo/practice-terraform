@@ -21,8 +21,8 @@ module "vpc" {
 module "sg" {
   source = "./modules/sg"
   depends_on = [module.vpc]
-  env        = var.env[1]
-
+  env    = var.env[1]
+  vpc_id = module.vpc.vpc_id
 
 
 }
